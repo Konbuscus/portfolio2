@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { WorkExperience } from 'src/app/models/work-experience-interface';
 import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
 import { Observable } from 'rxjs';
@@ -15,11 +15,9 @@ export class JobsComponent implements OnInit {
   @Input()
   workExperiences : WorkExperience[];
 
-
   constructor(
   ) { }
 
   ngOnInit(): void {
-    console.log(this.workExperiences);  }
-
+  }
 }

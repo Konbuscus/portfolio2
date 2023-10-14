@@ -8,4 +8,5 @@ export interface WorkExperience {
   Date: string;
   StillActive: boolean;
   CompanyLogo: string;
+  lang:string;
 }
